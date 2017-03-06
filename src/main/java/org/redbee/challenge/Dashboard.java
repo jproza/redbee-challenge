@@ -43,9 +43,6 @@ public class Dashboard extends BaseRichBolt {
 		String hashtag = input.getStringByField("hashtag");
 //		String[] tags = (String[]) input.getValueByField("hashtagEntities");
 		
-//		if(retweetCount > retweetThreshold) {
-//			retweetThreshold = retweetCount;
-			
 		String[] tags = readHastagFilters();
 		
 			
@@ -55,9 +52,6 @@ public class Dashboard extends BaseRichBolt {
 				logger.info("@" + author + " got " + String.valueOf(retweetCount) + " retweets for : " + text + " ***Do not show on hashtags*** ");
 			}
 			
-			
-//		}
-		
 		
 		collector.ack(input);
 	}
