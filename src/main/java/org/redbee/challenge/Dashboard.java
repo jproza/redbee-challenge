@@ -66,7 +66,7 @@ public class Dashboard extends BaseRichBolt {
 	private static final String[] readHastagFilters() { 
 		BufferedReader in;
 		try {
-			in = new BufferedReader(new FileReader("resources/hashtags.properties"));
+			in = new BufferedReader(new FileReader("src/main/resources/hashtags.properties"));
 		String str;
 		List<String> list = new ArrayList<String>();
 		while((str = in.readLine()) != null){
