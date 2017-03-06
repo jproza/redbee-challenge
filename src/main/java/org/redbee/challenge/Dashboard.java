@@ -85,17 +85,6 @@ public class Dashboard extends BaseRichBolt {
 	}
 	
 	
-//	@SuppressWarnings("resource")
-//	public static void main(String[] args) {
-//		BufferedReader in;
-//			try {
-//				in = new BufferedReader(new FileReader("resources/hashtags.properties"));
-//			} catch (FileNotFoundException e) {
-//				e.printStackTrace();
-//			}
-//	}
-	
-	
 	
 	private static final boolean checkifExistsTag(String tag, String[] fileTags) {
 		List<String> items = Arrays.asList(tag.split(","));
